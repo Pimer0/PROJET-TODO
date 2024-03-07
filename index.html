@@ -13,37 +13,28 @@
 			<input type="search" id="search" />
 		</div>
 		<div id="board">
-			<div class="row" id="row-s">
+			<div class="row" ondragover="onDragOver(event)" ondrop="onDrop(event)">
 				<div class="label">S</div>
+				<div class="card" id="first" draggable="true"></div>
+				<div class="card" id="second" draggable="true"></div>
 			</div>
-			<div class="row" id="row-a">
+			<div class="row" ondragover="onDragOver(event)" ondrop="onDrop(event)">
 				<div class="label">A</div>
 			</div>
-			<div class="row" id="row-b">
+			<div class="row" ondragover="onDragOver(event)" ondrop="onDrop(event)">
 				<div class="label">B</div>
 			</div>
-			<div class="row" id="row-c">
+			<div class="row" ondragover="onDragOver(event)" ondrop="onDrop(event)">
 				<div class="label">C</div>
 			</div>
-			<div class="row" id="row-d">
+			<div class="row" ondragover="onDragOver(event)" ondrop="onDrop(event)">
 				<div class="label">D</div>
 			</div>
-			<div class="row" id="row-f">
+			<div class="row" ondragover="onDragOver(event)" ondrop="onDrop(event)">
 				<div class="label">F</div>
 			</div>
 		</div>
-		<div
-			class="card-bank"
-			ondragover="allowDrop(event)"
-			ondrop="drop(event)"
-		></div>
-
-		<template data-pokemon-template>
-			<div class="card" id="first" draggable="true"></div>
-			<div class="card" id="second" draggable="true"></div>
-			<div class="card" id="third" draggable="true"></div>
-			<div class="card" id="fourth" draggable="true"></div>
-		</template>
+		<div class="card-bank"></div>
 	</body>
 	<script src="card.js"></script>
 	<script src="row.js"></script>
