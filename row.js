@@ -8,8 +8,10 @@ const onDragOver = (event) => {
 
 const onDrop = (event) => {
 	event.preventDefault();
-	const draggedCardId = event.dataTransfer.getData("id");
+	console.log(event, event.dataTransfer, event.dataTransfer.getData("text"));
+	const draggedCardId = event.dataTransfer.getData("text");
 	const draggedCard = document.getElementById(draggedCardId);
+	console.log(draggedCardId);
 	event.target.appendChild(draggedCard);
 	console.log("dropped the element");
 };
@@ -18,5 +20,6 @@ rows.forEach((row, index) => {
 	const label = row.querySelector(".label");
 	label.style.backgroundColor = colors[index];
 	row.ondragover = onDragOver;
-	row.ondrop = onDrop;
+	// row.ondrop = onDrop;
+	row.setAttribute("ondrop", "onDrop(event)");
 });
