@@ -36,9 +36,27 @@ body {
 
 .card {
 	height: 100%;
-	width: 100px;
+	width: fit-content;
 	display: flex;
 	background-color: aliceblue;
 	justify-content: center;
 	align-items: center;
+}
+
+.search-wrapper {
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-bank {
+	display: flex;
+	flex-direction: row;
+	width: 80vw;
+	height: fit-content;
+	background-color: rgb(30, 30, 30);
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	margin: 20px;
 }
