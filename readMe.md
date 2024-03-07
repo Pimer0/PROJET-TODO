@@ -14,7 +14,7 @@ Explication du role des fichiers :
 - index.html :
 
 Contient le contenu principal de la page.
-Un titre de niveau 1 <h1> affiche "Ma tier list pokémon".
+
 Une section avec la classe search-wrapper contenant :
 Une étiquette pour un champ de recherche, identifiée par for="search".
 Un champ de recherche <input type="search" id="search">.
