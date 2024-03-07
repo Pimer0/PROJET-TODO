@@ -7,4 +7,12 @@ Les features principales sont :
 - permettre le drag and drop
 - sauvegarde en local storage
 
-notre web app sera basée sur l'api pokémon
+notre web app sera basée sur l'api pokémon et aussi sur l'api drag and drop.
+
+Explication du role des fichiers :
+
+- index.html :
+- row.js :
+- card.js :
+- search.js :
+  
